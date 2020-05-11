@@ -10,8 +10,5 @@
         android:layout_height="match_parent"
         android:divider="#ff0000ff"
         android:dividerHeight="2dp"
-        android:footerDividersEnabled="false"
-        android:headerDividersEnabled="false"
-
         />
 </LinearLayout>
