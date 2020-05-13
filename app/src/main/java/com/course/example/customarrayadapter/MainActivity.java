@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         arrayList.add(new SubjectData("C", "https://www.tutorialspoint.com/cprogramming/", R.drawable.c));
         arrayList.add(new SubjectData("C++", "https://www.tutorialspoint.com/cplusplus/", R.drawable.cpp));
         arrayList.add(new SubjectData("Dart", "https://www.tutorialspoint.com/dart_programming/", R.drawable.dart));
-        arrayList.add(new SubjectData("Lisp", "https://www.tutorialspoint.com/lisp/", R.drawable.lisp));
+        arrayList.add(new SubjectData("PHP", "https://www.tutorialspoint.com/php/", R.drawable.php));
 
         CustomAdapter customAdapter = new CustomAdapter(this, arrayList);
         list.setAdapter(customAdapter);
