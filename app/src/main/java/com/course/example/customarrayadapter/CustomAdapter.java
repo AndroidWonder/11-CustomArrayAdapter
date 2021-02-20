@@ -18,6 +18,7 @@ class CustomAdapter extends ArrayAdapter {
         this.context=context;
     }
 
+    //return view displaying data at position
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         SubjectData subjectData=arrayList.get(position);
