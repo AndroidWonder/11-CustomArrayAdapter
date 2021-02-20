@@ -25,9 +25,9 @@ class CustomAdapter extends ArrayAdapter {
             LayoutInflater layoutInflater = LayoutInflater.from(context);
             convertView=layoutInflater.inflate(R.layout.list_row, null);
 
-            TextView tittle=convertView.findViewById(R.id.title);
+            TextView title=convertView.findViewById(R.id.title);
             ImageView imag=convertView.findViewById(R.id.list_image);
-            tittle.setText(subjectData.getSubjectName());
+            title.setText(subjectData.getSubjectName());
             imag.setImageResource(subjectData.getImage());
 
         }
