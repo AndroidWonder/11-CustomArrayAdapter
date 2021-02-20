@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         //attach listener
         list.setOnItemClickListener(this);
 
+        //create ArrayList and add data
         arrayList = new ArrayList<SubjectData>();
         arrayList.add(new SubjectData("Android", "https://www.tutorialspoint.com/android/", R.drawable.android));
         arrayList.add(new SubjectData("JAVA", "https://www.tutorialspoint.com/java/", R.drawable.java));
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
         String link = arrayList.get(position).getLink();
 
-        //open link in browser
+        //implicit intent to open link in browser
         Uri uri = Uri.parse(link);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
