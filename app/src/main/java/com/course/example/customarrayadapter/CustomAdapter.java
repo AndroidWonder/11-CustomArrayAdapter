@@ -22,16 +22,15 @@ class CustomAdapter extends ArrayAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         SubjectData subjectData=arrayList.get(position);
-        if(convertView==null){
-            LayoutInflater layoutInflater = LayoutInflater.from(context);
-            convertView=layoutInflater.inflate(R.layout.list_row, null);
+
+            //call inflater to create a View from an xml layout file
+            convertView = LayoutInflater.from(context).inflate(R.layout.list_row, parent, false);
 
             TextView title=convertView.findViewById(R.id.title);
             ImageView imag=convertView.findViewById(R.id.list_image);
             title.setText(subjectData.getSubjectName());
             imag.setImageResource(subjectData.getImage());
 
-        }
         return convertView;
     }
 }
